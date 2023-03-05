@@ -1,0 +1,11 @@
+{
+  "name": "express-rest-api-templates",
+  "packageManager": "yarn@3.4.1",
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0"
+  },
+  "scripts": {
+    "lint": "eslint --no-error-on-unmatched-pattern base/ templates/ --ext .js"
+  }
+}
