@@ -1,11 +1,9 @@
-// This file is the entry point of the application. It is responsible for setting up the server and connecting to the database.
-
-// Importing the required modules
+// importing the required modules
 const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
 
-// Importing the config files
+// importing the config files
 const dbConfig = require('./config/database')
 const envConfig = require('./config/environment')
 
@@ -14,15 +12,17 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const router = express.Router()
+const errorHandler = require('./middlewares/errorHandler')
 
-router.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+const v1Router = require('./v1/router')
 
-app.use('/', router)
+app.use('/v1/', v1Router)
 
-// Connect to database and start server
+// error handling
+app.use(errorHandler.get404)
+app.use(errorHandler.globalErrorHandler)
+
+// connect to database and start server
 mongoose.set('strictQuery', true)
 mongoose
   .connect(dbConfig.MONGODB_URI, {
