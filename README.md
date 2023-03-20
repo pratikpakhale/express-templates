@@ -2,9 +2,9 @@
 
 - This repository contains a collection of templates for building REST APIs with Express.
 
-- Check the [base]() directory for the base template.
+- Check the [base](https://github.com/pratikpakhale/express-templates/tree/main/base) directory for the base template.
 
-- Access the directory of each template in [templates]() to see the README for that template.
+- Access the directory of each template in [templates](https://github.com/pratikpakhale/express-templates/tree/main/templates) to see the README for that template.
 
 ## Express JS Production Best Practices
 
@@ -121,7 +121,7 @@ export default {
 
 [https://github.com/airbnb/javascript](https://github.com/airbnb/javascript)
 
-### ******\*\*******Docs -******\*\*******
+### **\*\***\*\***\*\***Docs -**\*\***\*\***\*\***
 
 [Index](https://jsdoc.app/)
 
@@ -171,11 +171,11 @@ console.error()
 
 ### Production
 
-********\*\*********Winston -********\*\*********
+**\*\*\*\***\*\***\*\*\*\***Winston -**\*\*\*\***\*\***\*\*\*\***
 
 [winston](https://www.npmjs.com/package/winston)
 
-******\*\*\*\*******Bunyan -******\*\*\*\*******
+**\*\***\*\*\*\***\*\***Bunyan -**\*\***\*\*\*\***\*\***
 
 [bunyan](https://www.npmjs.com/package//bunyan)
 
@@ -183,7 +183,7 @@ console.error()
 
 [Comparing Winston and Bunyan Node.js Logging](https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/)
 
-******\*\*\*\*******Morgan -******\*\*\*\*******
+**\*\***\*\*\*\***\*\***Morgan -**\*\***\*\*\*\***\*\***
 
 [](https://www.npmjs.com/package/morgan)
 
