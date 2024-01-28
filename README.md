@@ -92,6 +92,8 @@ The big advantage is that we can work on new features or improvements on a new v
 ```jsx
 require('dotenv').config()
 
+// use latest node features to implement the .env file 
+
 export default {
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
